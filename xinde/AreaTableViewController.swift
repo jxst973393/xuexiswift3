@@ -270,6 +270,8 @@ class AreaTableViewController: UITableViewController, NSFetchedResultsController
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        self.navigationController?.navigationBar.barTintColor = UIColor.black
+
         self.ctrlsel = self.creas
         //设置代理
 //        self.searchbar.delegate = self
@@ -283,6 +285,13 @@ class AreaTableViewController: UITableViewController, NSFetchedResultsController
             controller.dimsBackgroundDuringPresentation = false
 //            controller.definesPresentationContext = true
             definesPresentationContext = true
+            controller.searchBar.barStyle = .default
+//            controller.searchBar.showsBookmarkButton = true
+//            controller.searchBar.setImage(#imageLiteral(resourceName: "avatar_male_70"), for: .bookmark, state: .normal)
+//            controller.searchBar.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
+            
+//            controller.searchBar.tintColor = UIColor(displayP3Red: 0.12, green: 0.74, blue: 0.13, alpha: 1.00)
+//            controller.view.backgroundColor = UIColor (red: 0.97, green: 0.97, blue: 0.97, alpha: 1.0)
             controller.searchBar.placeholder = "请输入搜索内容"
             controller.navigationController?.isNavigationBarHidden = true
             controller.searchBar.searchBarStyle = .minimal

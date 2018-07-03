@@ -834,7 +834,6 @@ class xqTableViewController: UITableViewController,UINavigationControllerDelegat
                     return
                         print(error,"why")
                 }
-                
             }
             
             
